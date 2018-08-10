@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.seekbarseries.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo" />
+
+    <SeekBar
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar_id"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:max="4"
+        android:indeterminate="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pouco"
+        android:id="@+id/textView"
+        android:layout_below="@+id/imageView"
+        android:layout_alignLeft="@+id/seekBar_id"
+        android:layout_alignStart="@+id/seekBar_id" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Muito"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignRight="@+id/seekBar_id"
+        android:layout_alignEnd="@+id/seekBar_id" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_id"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/pouco"
+        android:layout_below="@+id/seekBar_id"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
